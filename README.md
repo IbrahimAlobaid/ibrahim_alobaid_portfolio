@@ -2,11 +2,10 @@
 
 A modern, responsive portfolio website showcasing my expertise in AI engineering, voice agents, multi-modal KYC systems, and multi-agent workflows.
 
-![Portfolio Preview](./public/profile.jpg)
 
 ## 🌐 Live Demo
 
-**[View Live Portfolio](https://ey5a6ola3nq4m.ok.kimi.link)**
+**[View Live Portfolio]()**
 
 ## ✨ Features
 
