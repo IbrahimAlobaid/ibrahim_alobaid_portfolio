@@ -5,7 +5,7 @@ A modern, responsive portfolio website showcasing my expertise in AI engineering
 
 ## 🌐 Live Demo
 
-**[View Live Portfolio]()**
+**[View Live Portfolio](https://ibrahimalobaid.vercel.app/)**
 
 ## ✨ Features
 
