@@ -342,61 +342,133 @@ function SkillsSection() {
 function ExperienceSection() {
   const experiences = [
     {
-      title: 'AI Engineer',
+      title: 'AI Systems Engineer',
       company: 'Amani AI',
       location: 'Remote',
       period: 'May 2025 – Present',
       type: 'Full-time',
       highlights: [
         {
-          title: 'Real-Time Multilingual Voice KYC System',
-          description: 'Architected an end-to-end voice onboarding agent using Pipecat and WebRTC that supports concurrent sessions in Arabic, English, and Turkish with low-latency performance and VAD-powered turn-taking.',
+          title: 'Production-Grade Voice KYC Platform',
+          description:
+            'Architected and deployed a real-time multilingual Voice KYC system supporting Arabic, English, and Turkish using Pipecat, WebRTC, and low-latency STT/TTS pipelines.',
           achievements: [
-            'Designed stateful orchestration layer to manage complex dialogue flows',
-            'Reduced average handle time through deterministic retry policies',
-            'Minimized human hand-off through fallback mechanisms'
+            'Designed concurrent session orchestration layer with deterministic dialogue state management',
+            'Reduced conversational latency through streaming optimization',
+            'Implemented VAD-driven interruption handling for natural turn-taking'
           ]
         },
         {
-          title: 'Multi-Modal Verification',
-          description: 'Integrated voice stream with LLM-assisted vision capabilities to verify IDs and selfies in real-time.',
+          title: 'Multi-Modal Identity Verification',
+          description:
+            'Integrated LLM-powered vision verification for ID and selfie validation within automated onboarding workflows.',
           achievements: [
-            'Implemented image-quality gating for high-reliability evidence submission',
-            'Achieved real-time processing with minimal latency'
+            'Implemented image-quality validation pipeline',
+            'Reduced manual review dependency through automated verification logic'
           ]
         },
         {
-          title: 'B2B Multi-Agent Systems',
-          description: 'Developed autonomous agent workflows using CrewAI, LangChain, and n8n to automate lead research, personalization, and outreach for sales teams.'
-        },
-        {
-          title: 'ETL & Compliance',
-          description: 'Engineered a distributed web scraping pipeline targeting 500+ data sources, ensuring high data availability for AML screening and risk-oriented enrichment.'
+          title: 'AML Entity Resolution & Profile Export System',
+          description:
+            'Designed and implemented a deterministic Entity Resolution pipeline producing canonical  Profiles (JSONL.GZ) with FULL and DELTA export modes for AML screening systems.',
+          achievements: [
+            'Engineered distributed web scraping and ETL pipelines powering AML screening and entity enrichment systems across hundreds of data sources.',
+            'Built Golden Profile schemawith stable SHA256-based resourceId and canonical merge logic',
+            'Implemented FULL/DELTA export engine with state-based hash comparison and deterministic ordering guarantees',
+          ]
         }
       ]
     },
+
     {
-      title: 'AI Engineer ',
+      title: 'AI Engineer',
       company: 'H&H',
       location: 'Remote',
       period: 'January 2025 – April 2025',
       type: 'Full-time',
       highlights: [
         {
-          title: 'Scalable API Development',
-          description: 'Developed and deployed a scalable AI chatbot API on Render, supporting multi-session interactions and automated scaling.'
-        },
-        {
-          title: 'System Architecture',
-          description: 'Architected a modular ChatbotController and LLMProviderFactory to support multi-modal inputs (text, vision, SQL), enabling dynamic switching between OpenAI and Groq models.',
+          title: 'Scalable AI Chatbot Architecture',
+          description: 'Designed modular AI chatbot infrastructure with dynamic model switching (OpenAI / Groq) and session persistence.',
           achievements: [
-            'Optimized for cost versus latency depending on query complexity',
-            'Implemented clean architecture for easy model swapping'
+            'Built LLMProviderFactory abstraction layer',
+            'Applied ReAct reasoning framework for improved context handling',
+            'Optimized cost vs latency routing strategy'
           ]
-        },
+        }
+      ]
+    },
+
+    {
+      title: 'Co-Founder',
+      company: 'Aleppo Dev Community',
+      location: 'Syria (On-site)',
+      period: 'April 2025 – Present',
+      type: 'Leadership',
+      highlights: [
         {
-          title: 'Optimization',
-          description: 'Applied the ReAct framework to improve context awareness and optimized session tracking for persistent state management.'
+          title: 'Technical Community Leadership',
+          description: 'Co-founded and led a regional developer community focused on AI, software engineering, and emerging technologies.',
+          achievements: [
+            'Organized AI workshops and technical bootcamps',
+            'Built strategic partnerships with local tech initiatives',
+            'Mentored students in ML and career development'
+          ]
+        }
+      ]
+    },
+
+    {
+      title: 'Computer Vision Engineer',
+      company: 'Freelance',
+      location: 'Remote',
+      period: 'July 2023 – November 2024',
+      type: 'Freelance',
+      highlights: [
+        {
+          title: 'Autonomous Driving & Perception Systems',
+          description: 'Implemented advanced computer vision pipelines for object detection, multi-sensor fusion, and 3D scene understanding.',
+          achievements: [
+            'Worked with LiDAR data and stereo vision systems',
+            'Applied YOLO and detection architectures for real-time inference',
+            'Improved environmental robustness under dynamic conditions'
+          ]
+        }
+      ]
+    },
+
+    {
+      title: 'Data Scientist',
+      company: 'Omdena',
+      location: 'Remote',
+      period: '2023 – November 2023',
+      type: 'Part-time',
+      highlights: [
+        {
+          title: 'Collaborative AI Impact Projects',
+          description: 'Participated in global AI initiatives focused on applied machine learning and data-driven decision systems.',
+          achievements: [
+            'Performed feature engineering and predictive modeling',
+            'Collaborated in distributed AI research teams'
+          ]
+        }
+      ]
+    },
+
+    {
+      title: 'Remote Support Engineer',
+      company: 'Mostaql.com',
+      location: 'Germany (Remote)',
+      period: 'May 2023 – November 2023',
+      type: 'Freelance',
+      highlights: [
+        {
+          title: 'Technical Troubleshooting & Client Support',
+          description: 'Provided remote technical support and system troubleshooting for international clients.',
+          achievements: [
+            'Resolved complex infrastructure and software issues',
+            'Maintained high client satisfaction through efficient resolution'
+          ]
         }
       ]
     }
