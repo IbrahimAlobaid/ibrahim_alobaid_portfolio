@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { GoldParticleCanvas } from '@/components/cinematic/GoldParticleCanvas'
 import { SectionReveal } from '@/components/motion/SectionReveal'
 import { StaggerList } from '@/components/motion/StaggerList'
-import { projects, skills } from '@/data/portfolio'
+import { projectSpotlight, projects, skills } from '@/data/portfolio'
 import { Calendar, ChevronDown, Cpu, Download, Github, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import './App.css'
@@ -131,6 +131,27 @@ function SkillsSection() {
   )
 }
 
+
+function ProjectSpotlight() {
+  return (
+    <div className="pin-wrap mt-10">
+      <div className="pin-sticky project-spotlight">
+        <p className="eyebrow">{projectSpotlight.eyebrow}</p>
+        <h3 className="text-2xl font-semibold">{projectSpotlight.title}</h3>
+        <p className="section-copy mt-3">{projectSpotlight.description}</p>
+        <div className="spotlight-metrics">
+          {projectSpotlight.metrics.map((metric) => (
+            <div key={metric.label}>
+              <span>{metric.value}</span>
+              <p>{metric.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function ProjectsSection() {
   return (
     <section id="projects" className="section-shell">
@@ -139,27 +160,7 @@ function ProjectsSection() {
         <h2 className="section-title">Selected Work</h2>
       </SectionReveal>
 
-      <div className="pin-wrap mt-10">
-        <div className="pin-sticky project-spotlight">
-          <p className="eyebrow">Project Spotlight</p>
-          <h3 className="text-2xl font-semibold">Engineering outcomes, not demos.</h3>
-          <p className="section-copy mt-3">Each project focuses on measurable gains in latency, reliability, and model quality across production-like workloads.</p>
-          <div className="spotlight-metrics">
-            <div>
-              <span>2</span>
-              <p>flagship projects</p>
-            </div>
-            <div>
-              <span>30%</span>
-              <p>detection uplift</p>
-            </div>
-            <div>
-              <span>real-time</span>
-              <p>delivery focus</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ProjectSpotlight />
 
       <div className="mt-8 grid gap-6 md:grid-cols-2">
         {projects.map((project, index) => (

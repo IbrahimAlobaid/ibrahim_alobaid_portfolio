@@ -37,3 +37,15 @@ export const projects = [
       'Implemented a RAG retrieval platform with Qdrant + FastAPI to improve enterprise-grade contextual search quality.',
   },
 ]
+
+export const projectSpotlight = {
+  eyebrow: 'Project Spotlight',
+  title: 'Engineering outcomes, not demos.',
+  description:
+    'Each project focuses on measurable gains in latency, reliability, and model quality across production-like workloads.',
+  metrics: [
+    { value: '2', label: 'flagship projects' },
+    { value: '30%', label: 'detection uplift' },
+    { value: 'real-time', label: 'delivery focus' },
+  ],
+}

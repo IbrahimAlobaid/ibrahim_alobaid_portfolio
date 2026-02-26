@@ -276,3 +276,10 @@
   color: rgba(255, 244, 214, 0.68);
   text-transform: capitalize;
 }
+
+
+@media (max-width: 640px) {
+  .spotlight-metrics {
+    grid-template-columns: 1fr;
+  }
+}
